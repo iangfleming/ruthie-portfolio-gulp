@@ -1,0 +1,102 @@
+// @iangfleming's personal helpers
+.p0 {
+  padding: 0 !important;
+}
+.m0 {
+  margin: 0 !important;
+}
+@for $i from 1 through 10 {
+// padding
+  .p#{$i} {
+    padding: 1rem * $i;
+  }
+  .px#{$i} {
+    padding-left: 1rem * $i;
+    padding-right: 1rem * $i;
+  }
+  .py#{$i} {
+    padding-top: 1rem * $i;
+    padding-bottom: 1rem * $i;
+  }
+  .pb#{$i} {
+    padding-bottom: 1rem * $i;
+  }
+  .pt#{$i} {
+    padding-top: 1rem * $i;
+  }
+// margin
+  .m#{$i} {
+    margin: 1rem * $i;
+  }
+  .mx#{$i} {
+    margin-left: 1rem * $i;
+    margin-right: 1rem * $i;
+  }
+  .my#{$i} {
+    margin-top: 1rem * $i;
+    margin-bottom: 1rem * $i;
+  }
+  .mb#{$i} {
+    margin-bottom: 1rem * $i;
+  }
+  .mt#{$i} {
+    margin-top: 1rem * $i;
+  }
+}
+
+// Display
+
+.hidden {
+  display: none;
+}
+.db {
+  display: block;
+}
+.di {
+  display: inline;
+}
+.dib {
+  display: inline-block;
+}
+
+// Position
+
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+
+// Float
+
+.fl { float: left; }
+.fr { float: right; }
+.oh { overflow: hidden; }
+
+// Text Modifiers
+.thin { font-weight: 100; }
+.center { text-align: center; }
+.right { text-align: right; }
+.left { text-align: left; }
+.italic { font-style: italic; }
+
+// Textarea
+.clean-text {
+  border: none;
+  border-image: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+// Size
+.full {
+  width: 100%;
+}
